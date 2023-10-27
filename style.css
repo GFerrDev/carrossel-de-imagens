@@ -1,0 +1,137 @@
+@charset "utf-8";
+@font-face {
+    font-family: font1;
+    src: url(./fonts/PLANK___.TTF);
+}
+@font-face {
+    font-family: font2;
+    src: url(./fonts/SaintCarell_PERSONAL_USE_ONLY.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    /* As unidades relativas vw (viewport width) e vh (viewport height) utilizam a largura e altura da viewport respectivamente. uso recomendado pra configurar tamanho da tela ou conteiner*/
+    background: #8b8b8b;
+    font-family: font2;
+    text-align: center; 
+}
+
+.main-header{
+    margin-top: 0;     
+    background-color:#000;
+    color: #8b8b8b;
+    border-top: #494141 solid 20px;
+    border-bottom: #494141 solid 20px;
+
+}
+.main-header h1{
+    padding: 0px;    
+}
+
+.conteiner{
+    height: 460px;
+    width: 798px;
+    overflow: hidden; 
+    /* esconde o que untrapaça o tamanho do conteiner */
+    position: absolute;
+    /* torna possiver alterar a posiçao do conteiner */
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* movimenta o eixo central */
+    border-radius:10px;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;  
+}
+
+.bar{
+    border-radius: 5px;
+    background-color: #8b8b8b;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar:hover{
+    background-color: #000;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;  
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;;  
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;  
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;  
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666667%;  
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333333%;  
+}
+
+
+footer h6{
+    background: #000;
+    color: #8b8b8b;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: font2;
+    background-color: #000;
+    border: #494141;
+    padding:3%;
+    padding-left: 50%;
+    padding-right: 50%;
+
+}
+
+/* https://www.dafont.com/pt/theme.php?cat=115 */
+
+
+
+
+
